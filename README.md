@@ -1,7 +1,7 @@
 # Planner-App
 ### This is a minimalistic productivity planner app built with React.js / AWS / Tailwind.css / Framer Motion
 
-App is running at https://master.d2flv7ew5debou.amplifyapp.com/
+App is running at https://master.d11uj72wdz44tv.amplifyapp.com/
 
 <img width="1364" alt="Screen Shot 2022-10-04 at 12 33 20 AM" src="https://user-images.githubusercontent.com/97484878/193734976-7bdbb4eb-e3a4-4659-99f4-1e2af025ce8f.png">
 <img width="1440" alt="Screen Shot 2022-10-04 at 12 25 07 AM" src="https://user-images.githubusercontent.com/97484878/193734987-7fbd964b-d71e-4e48-8f6f-c995f3eca0b3.png">
