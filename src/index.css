@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-fixed bg-gradient-to-tr from-independence via-dark-sea-green to-timberwolf overflow-auto sm:overflow-y-hidden;
+}
+
+ion-icon {
+	@apply text-3xl;
+}
+
+.header-add-btn > ion-icon, .header-logout-btn > ion-icon, .add > ion-icon {
+	@apply text-independence hover:text-battleship-grey;
+}
+
+.header-add-btn > ion-icon, .header-logout-btn > ion-icon {
+	--ionicon-stroke-width: 45px;
+	@apply text-2xl sm:text-4xl;
+}
+
+
+/* Authenticaton: */
+
+div[data-amplify-authenticator] {
+	@apply flex items-center justify-center h-screen;
+}
+
+div[data-amplify-container] {
+	@apply bg-laurel-green rounded-md;
+}
+
+button[role=^"tab"] {
+	@apply font-bold w-1/2 py-3 text-center;
+}
+button[role=^"tab"][data-state=^"inactive"] {
+	@apply bg-timberwolf;
+}
+button[role=^"tab"]:nth-child(2)[data-state=^"inactive"] {
+	@apply rounded-tr-md;
+}
+button[role=^"tab"]:nth-child(1)[data-state=^"inactive"] {
+	@apply rounded-tl-md;
+}
+
+div[role=^"tabpanel"][data-state=^"active"] {
+	@apply px-6 py-4;
+}
+div[role=^"tabpanel"][data-state=^"active"] > div[data-amplify-router-content] {
+	@apply flex justify-center text-center;
+}
+.amplify-visually-hidden {
+	@apply hidden;
+}
+.amplify-textfield input {
+	@apply border border-battleship-grey text-slate-500 rounded-md px-4 py-1 mx-3 my-2;
+}
+.amplify-passwordfield input {
+	@apply rounded-r-none mr-0;
+}
+.amplify-passwordfield .amplify-field-group {
+	@apply flex;
+}
+.amplify-passwordfield .amplify-field-group__outer-end > button {
+	@apply border border-battleship-grey rounded-r-md mt-2 py-1;
+}
+.amplify-field__show-password .amplify-icon > svg {
+	@apply w-4 h-4 mx-1 my-1;
+}
+
+form[data-amplify-form] .amplify-button--primary {
+	@apply mx-6 bg-dark-sea-green hover:bg-independence hover:scale-110 transition ease-in-out delay-150 duration-300 drop-shadow-xl rounded-md px-4 py-1 font-bold mb-3;
+}
+
+div[data-amplify-footer] {
+	@apply pt-3 text-sm;
+}

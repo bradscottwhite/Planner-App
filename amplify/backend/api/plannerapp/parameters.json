@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "plannerapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authplannerapp2c6ecfd3",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

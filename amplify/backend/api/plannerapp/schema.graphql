@@ -1,0 +1,17 @@
+type Cards
+@model
+@auth( rules: [ { allow: public, operations: [ read ] } ] ) {
+  id: ID!
+  name: String!
+  order: Int!
+}
+
+type Task
+@model
+@auth( rules: [ { allow: owner } ] ) {
+  id: ID!
+  text: String!
+  complete: Boolean!
+  card: Int!
+  priority: Int
+}
